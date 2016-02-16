@@ -1,7 +1,7 @@
 Fullpage.js 简化版本
 参考慕课网全屏滚动教程，有部分功能删减
 
-	/*配置选项：
+    /*配置选项：
      *   sectionBox:所有页面的容器的ID/class，并不是container
      *   section: 滚动的页面的ID/class
      *   ctrlBtnBox: 浮动的控制按钮列表的ID/class
@@ -14,4 +14,4 @@ Fullpage.js 简化版本
      *   keyboard: 是否使用键盘控制，默认true
      *   direction: 横向/纵向滚动，默认竖向vertical，横向为horizontal
      *   callback: 滚动完成后的回调函数，默认无
-  */
+     */
