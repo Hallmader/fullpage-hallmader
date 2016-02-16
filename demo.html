@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fullpage-Test</title>
+	<link rel="stylesheet" href="stylesheets/fullpage.min.css">
+	<style>
+		.section{
+			text-align: center;
+		}
+		#section1{
+			background-color: #058;
+		}
+		#section2{
+			background-color: #fa9;
+		}
+		#section3{
+			background-color: #049;
+		}
+		#section4{
+			background-color: #060;
+		}
+		h1{
+			font-size:10em;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		h1 + i{
+			display: inline-block;
+			vertical-align: middle;
+			height:100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="section-box">
+			<div class="section" id="section1">
+				<h1>第一页</h1>
+				<i></i>
+			</div>
+			<div class="section" id="section2">
+				<h1>第二页</h1>
+				<i></i>
+			</div>
+			<div class="section" id="section3">
+				<h1>第三页</h1>
+				<i></i>
+			</div>
+			<div class="section" id="section4">
+				<h1>第四页</h1>
+				<i></i>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/fullpage.min.js"></script>
+	<script>
+	/*配置选项：
+     *   sectionBox:所有页面的容器的ID/class，并不是container
+     *   section: 滚动的页面的ID/class
+     *   ctrlBtnBox: 浮动的控制按钮列表的ID/class
+     *   activeBtnCls: 当前显示的页面对应列表项的样式类的ID/class
+     *   index: 页面从第几页开始显示，默认0
+     *   easing: 滚动动画的时间函数，默认ease-in-out
+     *   duration: 滚动动画持续时间,默认1000毫秒
+     *   loop: 是否可以无限滚动，即第一页向上滚动到最后一页。默认false。
+     *   hasCtrlBtn: 是否使用控制按钮，默认true
+     *   keyboard: 是否使用键盘控制，默认true
+     *   direction: 横向/纵向滚动，默认竖向vertical，横向为horizontal
+     *   callback: 滚动完成后的回调函数，默认无
+     */
+		$("#container").Fullpage();
+	</script>
+</body>
+</html>

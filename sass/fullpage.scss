@@ -1,0 +1,66 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#container,
+.section-box,
+.section {
+    height: 100%;
+    position: relative;
+}
+
+.section {
+    background-size: cover;
+}
+
+.left {
+    float: left;
+}
+
+.btnBox {
+    position: fixed;
+    list-style: none;
+    cursor: pointer;
+}
+
+.btnBox li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-bottom: 10px;
+    transition: all 0.5s linear;
+}
+
+.btnBox li.active {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fa9;
+    box-sizing: border-box;
+}
+
+.btnBox.verticalBtn {
+    right: 50px;
+    top: 50%;
+    li{
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.btnBox.horizontalBtn {
+    bottom: 50px;
+    left: 50%;
+    li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
